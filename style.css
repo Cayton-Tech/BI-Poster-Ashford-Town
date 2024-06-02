@@ -1,0 +1,116 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif; /* Choose a suitable font */
+    margin: 0;
+    background-color: #f4f4f4; /* Light background */
+}
+
+header {
+    background-color: #333; /* Dark header */
+    color: #fff;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+
+h1 {
+    font-size: 1.5em;
+    margin-left: 1em;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+@media (max-width: 600px) { 
+    h1 {
+        font-size: 1em;
+    }
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    margin-right: 1em;
+    padding: 0;
+    display: flex;
+}
+
+@media (max-width: 600px) { 
+    nav ul {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+nav li {
+    margin-left: 2rem; 
+}
+
+nav li a { /* Style navigation links */
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 2rem;
+    min-height: 70vh;
+}
+
+.tiles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Wrap tiles on smaller screens */
+}
+
+.tile {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem; 
+    margin-bottom: 1rem; 
+    text-align: center;
+    height: 475px;
+    width: 300px;  /* Adjust tile width as needed */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transitions */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor:  pointer;
+}
+
+.tile:hover {
+    transform: scale(1.05); /* Increase size on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+}
+
+.tile .material-symbols-outlined {
+    font-size: 100px; /* Adjust the size as needed */
+    color: #333; /* Choose a suitable color */
+}
+
+.tile ul {
+    display:  none;
+    list-style: none;
+    padding: 0;
+    margin:  1rem 0;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tile:hover ul {
+    display: block;
+    opacity: 1;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
