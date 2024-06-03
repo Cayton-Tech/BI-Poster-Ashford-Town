@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif; /* Choose a suitable font */
     margin: 0;
     background-color: #f4f4f4; /* Light background */
-    background-image: url("path/to/your/background-image.jpg"); /* Add the path to your image */
+    background-image: url("stadium.jpg"); /* Add the path to your image */
     background-size: cover; /* Adjust as needed */
     background-position: center; /* Adjust as needed */
     background-repeat: no-repeat; /* Adjust as needed */
